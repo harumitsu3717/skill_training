@@ -61,7 +61,7 @@ nav {
 
 #portfolio {
   background-color: #eceff1;
-  padding: 90px;
+  padding: 90px 0;
 }
 
 .p-body {
@@ -87,7 +87,7 @@ nav {
   font-size: 16px;
   text-align: center;
   color: #000;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .p-contents {
@@ -105,11 +105,6 @@ nav {
 #p-item:nth-child(3),
 #p-item:nth-child(6) {
   margin: 0 0 10px 0;
-}
-
-#p-item:nth-child(4),
-#p-item:nth-child(5) {
-  margin: 0 10px 10px 0;
 }
 
 .p-1 {
@@ -151,13 +146,7 @@ nav {
 #feature {
   width: 980px;
   padding: 90px 0;
-  margin:
-  auto;
-}
-
-.f-title {
-  font-size: 32px;
-  color: #000;
+  margin:auto;
 }
 
 .f-body {
@@ -191,3 +180,270 @@ nav {
   text-align: left;
   color: #000;
 }
+
+#profile {
+  background-color: #eceff1;
+}
+
+.prof-content {
+  width: 1024px;
+  padding: 90px 0;
+  margin:auto;
+}
+
+.prof {
+  display: flex;
+}
+
+.prof-body {
+  width: 512px;
+}
+
+.prof-icon {
+  background-image: url(img/my-icon.jpg);
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.prof-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.prof-title:nth-child(1) {
+  margin-top: 0px;
+}
+
+.prof-text {
+  font-size: 16px;
+  color: #000;
+}
+
+#contact {
+  width: 800px;
+  padding: 90px 0;
+  margin: auto;
+}
+
+.c-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.c-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.c-text {
+  margin-bottom: 20px;
+}
+
+.c-text:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.c-icon {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.c-icon:nth-child(3) {
+  margin-right: 0;
+}
+
+footer {
+  width: auto;
+  height: 60px;
+  background-color: #ec715f;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #fafafa;
+}
+
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    height:50px;
+  }
+
+  .nav-items {
+    height: 50px;
+    width: 90%;
+  }
+
+  .nav-logo {
+    height: 50px;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+  }
+
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    position: absolute;
+  }
+
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+
+  .menu-btn span:after {
+    top: 8px;
+  }
+
+  #main {
+    background-image: url(img/code.png);
+    background-size: cover;
+    height: 650px;
+    background-position: center;
+    padding-top: 200px;
+  }
+
+  .main-content {
+    width: 90%;
+    margin: auto;
+  }
+
+  .main-title {
+    font-size: 40px;
+    color: #fafafa;
+    margin-bottom: 10px;
+  }
+
+  .main-body {
+    font-size: 18px;
+    color: #fafafa;
+  }
+
+  .p-body {
+    width: 90%;
+  }
+
+  .p-contents {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #p-item {
+    margin: 0 0 10px 0;
+  }
+
+  #p-item:nth-child(6) {
+    margin: 0;
+  }
+
+  .p-1,
+  .p-3,
+  .p-5 {
+    display: none;
+  }
+
+  #feature {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+
+  .f-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .f-item {
+    margin: 0 0 10px 0;
+  }
+  .f-item:nth-child(3) {
+    margin: 0;
+  }
+
+  .prof-content {
+    width: 90%;
+  }
+
+  .prof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prof-body {
+    width: 90%;
+  }
+
+  .prof-title {
+    margin: 20px 0 5px 0;
+    text-align: center;
+  }
+  .prof-title:nth-child(1) {
+    margin-top: 20px;
+  }
+
+  .prof-text {
+    text-align: center;
+  }
+  
+  #contact {
+    width: 90%;
+  }
+
+  .c-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-title {
+    text-align: center;
+  }
+
+  .c-text:nth-child(4) {
+    margin-bottom: 20px;
+  }
+
+  .c-icon {
+    margin-right: 8px;
+  }
+
+} 
